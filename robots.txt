@@ -2,4 +2,4 @@
 
 User-agent: *
 
-Host: paulradzkov.com
+Host: park37a.ru
