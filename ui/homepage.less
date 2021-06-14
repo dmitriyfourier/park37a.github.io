@@ -3,7 +3,6 @@
 //Fonts
 @g-fontmain: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 @g-fontsecond: @g-fontmain;
-@fontsecond: @g-fontmain;
 @g-fontmono: 'Consolas', 'Liberation Mono', 'Menlo', 'Courier New', 'Courier', 'Droid Sans Mono',  monospace, serif;
 
 //link colors on light bg
@@ -222,7 +221,6 @@
 }
 
 @import (less) "../css/_project-card.less";
-@import (less) "../css/_cta.less";
 @import (less) "../css/_txt.less";
 @import (less) "../ui/blogwall/blogwall.less";
 @import (less) "../css/_badge.less";
@@ -246,78 +244,3 @@
 
 @import (less) "../ui/offline/offline-theme-dark-custom.css";
 @import (less) "../ui/offline/offline-language-english.css";
-
-// Call to Action
-.cta-settings() {
-    @ctacolor: #2b9aff;
-}
-
-/* demo-button */
-.button {
-    .cta-settings();
-
-    display: inline-block;
-    border: 2px solid;
-    border-radius: 3px;
-    padding: .5rem 1.5rem;
-    font-family: @fontsecond;
-    text-transform: uppercase;
-    text-decoration: none;
-    box-shadow: inset 0 0 0 0 @ctacolor, 0 0px 0px -2px rgba(0, 0, 0, 0.2);
-    transition: 0.5s;
-    color: @ctacolor;
-
-    &:hover {
-        color: #FFF !important;
-        border-color: @ctacolor;
-        box-shadow: inset 0 0 0 4rem @ctacolor, 0 3px 3px -2px rgba(0, 0, 0, 0.2);
-    }
-
-    .no-boxshadow &:hover {
-        background: @ctacolor;
-    }
-}
-
-.link-to-demo {
-    .cta-settings();
-
-    display: inline-block;
-    border: 2px solid;
-    border-radius: 3px;
-    padding: .5rem 1.5rem;
-    font-size: 1.5rem;
-    font-family: @fontsecond;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    box-shadow: inset 0 0 0 0 @ctacolor, 0 0px 0px -2px rgba(0,0,0,0.2);
-    transition: 0.5s;
-    color: @ctacolor;
-
-    &:hover {
-        color: #FFF !important;
-        border-color: @ctacolor;
-        box-shadow: inset 0 0 0 4rem @ctacolor, 0 3px 3px -2px rgba(0,0,0,0.2);
-    }
-
-    .no-boxshadow &:hover {
-        background: @ctacolor;
-    }
-}
-
-.big-phone {
-    .cta-settings();
-    font-size: 3em;
-    font-weight: 600;
-}
-
-.tariffs{
-    .cta-settings();
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.attention-block {
-    .cta-settings();
-    background-color: #f6f6ee;
-}
