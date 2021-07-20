@@ -1,311 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Page Not Found :(</title>
-        <style>
-            ::-moz-selection {
-                background: #b3d4fc;
-                text-shadow: none;
-            }
 
-            ::selection {
-                background: #b3d4fc;
-                text-shadow: none;
-            }
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found :(</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
 
-            html {
-                padding: 30px 10px;
-                font-size: 20px;
-                line-height: 1.4;
-                color: #737373;
-                -webkit-text-size-adjust: 100%;
-                    -ms-text-size-adjust: 100%;
-                background: #fcfcfc url(i/tiny_grid.png);
-            }
+        body {
+            background-color: antiquewhite;
+        }
 
-            html,
-            input {
-                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            }
+        h1 {
+            font-size: 5em;
+            font-family: Montserrat;
+            font-weight: 800;
+            margin-block-end: 0em;
+        }
 
-            body {
-                max-width: 500px;
-                _width: 500px;
-                padding: 30px 0px 50px;
-                margin: 0 auto;
-            }
+        p {
+            font-size: 2em;
+            font-family: Montserrat;
+            font-weight: 300;
+            margin-block-start: 0em;
+        }
+        .small{
+            font-size: 1.125em;
+            font-family: Montserrat;
+            font-weight: 300;
+        }
 
-            h1 {
-                margin: 0 10px;
-                font-size: 50px;
-                text-align: center;
-            }
+        div.container {
+            margin-top: 48px;
+            margin-left: 2%;
+            margin-bottom: 48px;
+            margin-right: 2%;
+        }
 
-            h1 span {
-                color: #bbb;
-            }
+        .link,
+        .link-inherit,
+        .link-novisited,
+        a {
+            text-decoration: underline;
+            -webkit-text-decoration-line: underline;
+            -moz-text-decoration-line: underline;
+            text-decoration-line: underline;
+            -webkit-text-decoration-style: solid;
+            -moz-text-decoration-style: solid;
+            text-decoration-style: solid;
+            text-decoration-skip: ink
+        }
 
-            h3 {
-                margin: 1.5em 0 0.5em;
-            }
+        .link img:only-child,
+        a img:only-child {
+            vertical-align: top
+        }
 
-            p {
-                margin: 1em 0;
-                text-shadow: 0 1px 1px #FFF;
-            }
+        .link,
+        .link:link,
+        a:not([class]),
+        a:not([class]):link {
+            color: #0877db;
+            -webkit-text-decoration-color: rgba(8, 119, 219, .25);
+            -moz-text-decoration-color: rgba(8, 119, 219, .25);
+            text-decoration-color: rgba(8, 119, 219, .25)
+        }
 
-            ul {
-                padding: 0 0 0 40px;
-                margin: 1em 0;
-            }
+        .link:visited,
+        a:not([class]):visited {
+            color: #9108db;
+            -webkit-text-decoration-color: rgba(145, 8, 219, .25);
+            -moz-text-decoration-color: rgba(145, 8, 219, .25);
+            text-decoration-color: rgba(145, 8, 219, .25)
+        }
 
-            .container {
-                max-width: 380px;
-                _width: 380px;
-                margin: 0 auto;
-            }
+        .link:focus,
+        .link:hover,
+        a:not([class]):focus,
+        a:not([class]):hover {
+            color: #2b9aff;
+            -webkit-text-decoration-color: rgba(43, 154, 255, .25);
+            -moz-text-decoration-color: rgba(43, 154, 255, .25);
+            text-decoration-color: rgba(43, 154, 255, .25)
+        }
 
-            /* google search */
+        .link:active,
+        .link:visited:focus,
+        .link:visited:hover,
+        a:not([class]):active,
+        a:not([class]):visited:focus,
+        a:not([class]):visited:hover {
+            color: #bc4df8;
+            -webkit-text-decoration-color: rgba(188, 77, 248, .25);
+            -moz-text-decoration-color: rgba(188, 77, 248, .25);
+            text-decoration-color: rgba(188, 77, 248, .25)
+        }
 
-            #goog-fixurl ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
+        .link-novisited,
+        .link-novisited:link,
+        .link-novisited:visited {
+            color: #0877db;
+            -webkit-text-decoration-color: rgba(8, 119, 219, .25);
+            -moz-text-decoration-color: rgba(8, 119, 219, .25);
+            text-decoration-color: rgba(8, 119, 219, .25)
+        }
 
-            #goog-fixurl form {
-                margin: 0;
-            }
+        .link-novisited:focus,
+        .link-novisited:hover,
+        .link-novisited:visited:focus,
+        .link-novisited:visited:hover {
+            color: #2b9aff;
+            -webkit-text-decoration-color: rgba(43, 154, 255, .25);
+            -moz-text-decoration-color: rgba(43, 154, 255, .25);
+            text-decoration-color: rgba(43, 154, 255, .25)
+        }
 
-            #goog-wm-qt,
-            #goog-wm-sb {
-                border: 1px solid #bbb;
-                font-size: 16px;
-                line-height: normal;
-                vertical-align: top;
-                color: #444;
-                border-radius: 2px;
-            }
+        .link-novisited:active {
+            color: #bc4df8;
+            -webkit-text-decoration-color: rgba(188, 77, 248, .25);
+            -moz-text-decoration-color: rgba(188, 77, 248, .25);
+            text-decoration-color: rgba(188, 77, 248, .25)
+        }
 
-            #goog-wm-qt {
-                width: 220px;
-                height: 20px;
-                padding: 5px;
-                margin: 5px 10px 0 0;
-                box-shadow: inset 0 1px 1px #ccc;
-            }
+        .link-inherit,
+        .link-inherit:link,
+        .link-inherit:visited {
+            color: inherit
+        }
 
-            #goog-wm-sb {
-                display: inline-block;
-                height: 32px;
-                padding: 0 10px;
-                margin: 5px 0 0;
-                white-space: nowrap;
-                cursor: pointer;
-                background-color: #f5f5f5;
-                background-image: -webkit-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                background-image: -moz-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                background-image: -ms-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                background-image: -o-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                *overflow: visible;
-                *display: inline;
-                *zoom: 1;
-            }
+        .link-inherit:focus,
+        .link-inherit:hover {
+            color: #2b9aff;
+            -webkit-text-decoration-color: rgba(43, 154, 255, .25);
+            -moz-text-decoration-color: rgba(43, 154, 255, .25);
+            text-decoration-color: rgba(43, 154, 255, .25)
+        }
 
-            #goog-wm-sb:hover,
-            #goog-wm-sb:focus {
-                border-color: #aaa;
-                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-                background-color: #f8f8f8;
-            }
+        .link-inherit:active,
+        .link-inherit:visited:focus,
+        .link-inherit:visited:hover {
+            color: #bc4df8;
+            -webkit-text-decoration-color: rgba(188, 77, 248, .25);
+            -moz-text-decoration-color: rgba(188, 77, 248, .25);
+            text-decoration-color: rgba(188, 77, 248, .25)
+        }
 
-            #goog-wm-qt:hover,
-            #goog-wm-qt:focus {
-                border-color: #105cb6;
-                outline: 0;
-                color: #222;
-            }
+        .link,
+        .link-inherit,
+        .link-inherit:link,
+        .link-inherit:visited,
+        .link-novisited,
+        .link-novisited:link,
+        .link-novisited:visited,
+        .link:link,
+        .link:visited,
+        a:not([class]),
+        a:not([class]):link,
+        a:not([class]):visited {
+            border-radius: .125em;
+            -webkit-transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out, -webkit-box-shadow .3s ease-out, text-decoration-color .3s ease-out;
+            -o-transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out, box-shadow .3s ease-out, text-decoration-color .3s ease-out;
+            transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out, box-shadow .3s ease-out, text-decoration-color .3s ease-out
+        }
 
-            input::-moz-focus-inner {
-                padding: 0;
-                border: 0;
-            }
-            
-            @keyframes go3d {
-                0% { text-shadow: 0px 0px 2px #686868; }
-                100% { 	
-                    /***** 3D TRANSFORMATION *****/
-                    text-shadow: 0px 0px 2px #686868,
-                                 0px 1px 1px #ddd,
-                                 0px 2px 1px #d6d6d6,
-                                 0px 3px 1px #ccc,
-                                 0px 4px 1px #c5c5c5,
-                                 0px 5px 1px #c1c1c1,
-                                 0px 6px 1px #bbb,
-                                 0px 7px 1px #777,
-                                 0px 8px 3px rgba(100, 100, 100, 0.4),
-                                 0px 9px 5px rgba(100, 100, 100, 0.1),
-                                 0px 10px 7px rgba(100, 100, 100, 0.15),
-                                 0px 11px 9px rgba(100, 100, 100, 0.2),
-                                 0px 12px 11px rgba(100, 100, 100, 0.25),
-                                 0px 13px 15px rgba(100, 100, 100, 0.3);  }
-            }
+        .link-inherit:hover,
+        .link-novisited:hover,
+        .link:hover,
+        a:not([class]):hover {
+            -webkit-transition: color 0s, background-color 0s, border-color 0s, -webkit-box-shadow 0s, text-decoration-color 0s;
+            -o-transition: color 0s, background-color 0s, border-color 0s, box-shadow 0s, text-decoration-color 0s;
+            transition: color 0s, background-color 0s, border-color 0s, box-shadow 0s, text-decoration-color 0s
+        }
 
-            @-webkit-keyframes go3d {
-                0% { text-shadow: 0px 0px 2px #686868; }
-                100% { 	
-                    /***** 3D TRANSFORMATION *****/
-                    text-shadow: 0px 0px 2px #686868,
-                                 0px 1px 1px #ddd,
-                                 0px 2px 1px #d6d6d6,
-                                 0px 3px 1px #ccc,
-                                 0px 4px 1px #c5c5c5,
-                                 0px 5px 1px #c1c1c1,
-                                 0px 6px 1px #bbb,
-                                 0px 7px 1px #777,
-                                 0px 8px 3px rgba(100, 100, 100, 0.4),
-                                 0px 9px 5px rgba(100, 100, 100, 0.1),
-                                 0px 10px 7px rgba(100, 100, 100, 0.15),
-                                 0px 11px 9px rgba(100, 100, 100, 0.2),
-                                 0px 12px 11px rgba(100, 100, 100, 0.25),
-                                 0px 13px 15px rgba(100, 100, 100, 0.3);  }
-            }
+        .link-inherit:focus,
+        .link-novisited:focus,
+        .link:focus,
+        a:not([class]):focus {
+            background: rgba(43, 154, 255, .2);
+            -webkit-box-shadow: 0 0 0 .1875em rgba(43, 154, 255, .2);
+            box-shadow: 0 0 0 .1875em rgba(43, 154, 255, .2);
+            outline: 0
+        }
 
-            @-moz-keyframes go3d {
-                0% { text-shadow: 0px 0px 2px #686868; }
-                100% { 	
-                    /***** 3D TRANSFORMATION *****/
-                    text-shadow: 0px 0px 2px #686868,
-                                 0px 1px 1px #ddd,
-                                 0px 2px 1px #d6d6d6,
-                                 0px 3px 1px #ccc,
-                                 0px 4px 1px #c5c5c5,
-                                 0px 5px 1px #c1c1c1,
-                                 0px 6px 1px #bbb,
-                                 0px 7px 1px #777,
-                                 0px 8px 3px rgba(100, 100, 100, 0.4),
-                                 0px 9px 5px rgba(100, 100, 100, 0.1),
-                                 0px 10px 7px rgba(100, 100, 100, 0.15),
-                                 0px 11px 9px rgba(100, 100, 100, 0.2),
-                                 0px 12px 11px rgba(100, 100, 100, 0.25),
-                                 0px 13px 15px rgba(100, 100, 100, 0.3);  }
-            }
+        .link-noline {
+            text-decoration: none
+        }
+    </style>
+</head>
 
-            @-ms-keyframes go3d {
-                0% { text-shadow: 0px 0px 2px #686868; }
-                100% { 	
-                    /***** 3D TRANSFORMATION *****/
-                    text-shadow: 0px 0px 2px #686868,
-                                 0px 1px 1px #ddd,
-                                 0px 2px 1px #d6d6d6,
-                                 0px 3px 1px #ccc,
-                                 0px 4px 1px #c5c5c5,
-                                 0px 5px 1px #c1c1c1,
-                                 0px 6px 1px #bbb,
-                                 0px 7px 1px #777,
-                                 0px 8px 3px rgba(100, 100, 100, 0.4),
-                                 0px 9px 5px rgba(100, 100, 100, 0.1),
-                                 0px 10px 7px rgba(100, 100, 100, 0.15),
-                                 0px 11px 9px rgba(100, 100, 100, 0.2),
-                                 0px 12px 11px rgba(100, 100, 100, 0.25),
-                                 0px 13px 15px rgba(100, 100, 100, 0.3);  }
-            }
-
-            @-o-keyframes go3d {
-                0% { text-shadow: 0px 0px 2px #686868; }
-                100% { 	
-                    /***** 3D TRANSFORMATION *****/
-                    text-shadow: 0px 0px 2px #686868,
-                                 0px 1px 1px #ddd,
-                                 0px 2px 1px #d6d6d6,
-                                 0px 3px 1px #ccc,
-                                 0px 4px 1px #c5c5c5,
-                                 0px 5px 1px #c1c1c1,
-                                 0px 6px 1px #bbb,
-                                 0px 7px 1px #777,
-                                 0px 8px 3px rgba(100, 100, 100, 0.4),
-                                 0px 9px 5px rgba(100, 100, 100, 0.1),
-                                 0px 10px 7px rgba(100, 100, 100, 0.15),
-                                 0px 11px 9px rgba(100, 100, 100, 0.2),
-                                 0px 12px 11px rgba(100, 100, 100, 0.25),
-                                 0px 13px 15px rgba(100, 100, 100, 0.3);  }
-            }
-
-            .go3d {
-                -webkit-animation: go3d 2s;
-                -moz-animation: go3d 2s;
-                -ms-animation: go3d 2s;
-                -o-animation: go3d 2s;
-                animation: go3d 2s;
-            }
-            h1.title {
-                font-size: 200px;
-                line-height: 220px;
-                letter-spacing: 1px;
-            }
-            
-            h3.title {
-                font-size: 60px;
-                line-height: 1;
-                letter-spacing: 1px;
-                margin-top: 0px;
-                text-align: center;
-            }
-            .title .go3d {
-                color:#fff;
-                
-                cursor:pointer;
-                
-                -webkit-transition: all 0.1s linear;
-                   -moz-transition: all 0.1s linear;
-                     -o-transition: all 0.1s linear;
-                    -ms-transition: all 0.1s linear;
-                        transition: all 0.1s linear;
-                
-                /***** 3D TRANSFORMATION *****/
-                    text-shadow: 0px 0px 2px #686868,
-                                 0px 1px 1px #ddd,
-                                 0px 2px 1px #d6d6d6,
-                                 0px 3px 1px #ccc,
-                                 0px 4px 1px #c5c5c5,
-                                 0px 5px 1px #c1c1c1,
-                                 0px 6px 1px #bbb,
-                                 0px 7px 1px #777,
-                                 0px 8px 3px rgba(100, 100, 100, 0.4),
-                                 0px 9px 5px rgba(100, 100, 100, 0.1),
-                                 0px 10px 7px rgba(100, 100, 100, 0.15),
-                                 0px 11px 9px rgba(100, 100, 100, 0.2),
-                                 0px 12px 11px rgba(100, 100, 100, 0.25),
-                                 0px 13px 15px rgba(100, 100, 100, 0.3);  
-            }
-                                 
-            .title .go3d:hover {
-                text-shadow: 0px 0px 2px #686868;
-                
-                -webkit-transition: all 0.1s linear;
-                   -moz-transition: all 0.1s linear;
-                     -o-transition: all 0.1s linear;
-                    -ms-transition: all 0.1s linear;
-                        transition: all 0.1s linear;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <h1 class="title"><span class="go3d">4</span><span class="go3d">0</span><span class="go3d">4</span></h1>
-            <h3 class="title"><span class="go3d">Страница</span> <span class="go3d">не</span> <span class="go3d">найдена</span></h3>
-            <p>Сорри, но страницы, которую вы пытаетесь посмотреть, не существует.</p>
-            <p>Похоже, это могло быть результатом:</p>
-            <ul>
-                <li>опечатки в адресе</li>
-                <li>перехода по устаревшей линке</li>
-            </ul>
-            <script>var GOOG_FIXURL_LANG=(navigator.language||"").slice(0,2),GOOG_FIXURL_SITE=location.host</script>
-            <script src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Страница не найдена</p>
+            <p>Но вы можете попробовать кое-что другое. Например:</p>
+        <div class="small">
+            <p class="small"><a href="https://neighborliness.ru/">Вернуться на главную</a> 🏡</p>
+            <p class="small"><a href="https://journal.neighborliness.ru/">Почитать журнал</a> 📋</p>
+            <p class="small"><a href="https://neighborliness.mave.digital/">Послушать подкаст</a> 🎙</p>
         </div>
-    </body>
+
+    </div>
+</body>
+
 </html>
