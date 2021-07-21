@@ -1,7 +1,18 @@
 //global variables
-
+@font-face{
+    font-family: 'PermianSansTypeface';
+    src:  url('/fonts/Permian/PermianSansTypeface.otf');
+}
+@font-face{
+    font-family: 'PermianSerifTypeface';
+    src:  url('/fonts/Permian/PermianSerifTypeface.otf');
+}
+@font-face{
+    font-family: 'PermianSlabSerifTypeface.otf';
+    src:  url('/fonts/Permian/PermianSlabSerifTypeface.otf');
+}
 //Fonts
-@g-fontmain: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@g-fontmain: "PermianSansTypeface";
 @g-fontsecond: @g-fontmain;
 @g-fontmono: 'Consolas', 'Liberation Mono', 'Menlo', 'Courier New', 'Courier', 'Droid Sans Mono',  monospace, serif;
 
@@ -234,7 +245,6 @@
 @import (less) "../css/_contact-link.less";
 @import (less) "../css/_cta.less";
 @import (less) "../css/_tags.less";
-@import (less) "../css/_googlesearch.less";
 @import (less) "../../../node_modules/ilyabirman-likely/release/likely.css";
 @import (less) "../ui/likely/_likely.less";
 .likely-settings() {
